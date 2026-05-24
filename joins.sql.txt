@@ -1,0 +1,12 @@
+-- Joins ------------>used to combine the tables
+-- Inner join
+create table department(id int primary key,dept_name varchar(56),strength int not null);
+insert into department values (1, "cse",400);
+select * from department;
+create table stud(id int ,name varchar(89),age int,dept_name varchar(89));
+insert into stud values(103,"vaishu",32,"cse");
+select*from stud;
+select *from department inner join  stud on department.dept_name=stud.dept_name;
+select * from department left join stud on department.dept_name=stud.dept_name;
+select * from department right join stud on department.dept_name=stud.dept_name;
+select *from department cross join stud ;

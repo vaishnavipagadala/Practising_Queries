@@ -1,0 +1,15 @@
+-- aggregation funcs ---->combining multiple rowws of data into a single result
+-- Count
+select age, count(age)from student where age>18 group by age;
+select *from student;
+-- Sum
+select  sum(age) from student  where age=40 ;
+select sum(id) from student where age=40 group by  age;
+-- Avg
+select avg(age) from student where age=40 group by age;
+select avg(id) from student  where age=40 group by age;
+-- Min & Max
+select min(age),max(age),count(*) from student ;
+-- Group by ,having and alias
+select name,sum(age) as age from student group by name having sum(age)>25;
+select name,sum(age) as age from student group by name having sum(age)>25;

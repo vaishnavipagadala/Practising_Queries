@@ -1,0 +1,21 @@
+-- concat ---Adding 2 or more strings
+select concat(name, - ,address) from  student ; 
+select concat(vaishnavi,pagadala);
+-- Length retturns the  length of the string and CHAR_LEN()
+select length(vaishnavi);
+select  length(name) from student;
+-- Substring retrieves  the selected portion in the string
+select substring(hello world,5,4);
+select substring(name,1,6) from student;
+-- Upper,Lower
+select upper(name) from student;
+select lower(name) from student;
+-- Trim removes the startin g and ending spaces
+select trim(  Hello  );
+-- Replace it replaces the string
+select replace(hello world,world,vaishu);
+update   student set  age=replace(age,45,40);
+selectfrom student;
+-- left,right -----returns the left part with particular number of chars
+select left(hello,4);
+select right(vaishu,4);
